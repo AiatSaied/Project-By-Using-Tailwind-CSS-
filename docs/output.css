@@ -580,12 +580,20 @@ video {
   display: grid;
 }
 
+.hidden{
+  display: none;
+}
+
 .h-full{
   height: 100%;
 }
 
 .w-full{
   width: 100%;
+}
+
+.cursor-pointer{
+  cursor: pointer;
 }
 
 .grid-cols-3{
@@ -674,6 +682,11 @@ video {
 .px-5{
   padding-left: 1.25rem;
   padding-right: 1.25rem;
+}
+
+.py-2{
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
 }
 
 .py-3{
@@ -769,6 +782,26 @@ video {
   color: rgb(234 179 8 / var(--tw-text-opacity, 1));
 }
 
+.transition{
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-backdrop-filter;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-backdrop-filter;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+.duration-150{
+  transition-duration: 150ms;
+}
+
+.duration-200{
+  transition-duration: 200ms;
+}
+
+.ease-out{
+  transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
+}
+
 .card{
   position: relative;
   height: 18rem;
@@ -821,4 +854,70 @@ video {
   padding-bottom: 0.5rem;
   padding-left: 0.75rem;
   padding-right: 0.75rem;
+}
+
+.hover\:bg-gray-500:hover{
+  --tw-bg-opacity: 1;
+  background-color: rgb(107 114 128 / var(--tw-bg-opacity, 1));
+}
+
+.hover\:bg-primary:hover{
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 51 51 / var(--tw-bg-opacity, 1));
+}
+
+.hover\:bg-opacity-25:hover{
+  --tw-bg-opacity: 0.25;
+}
+
+.hover\:text-2xl:hover{
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
+.hover\:text-6xl:hover{
+  font-size: 3.75rem;
+  line-height: 1;
+}
+
+.hover\:text-xl:hover{
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+}
+
+.hover\:text-white:hover{
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity, 1));
+}
+
+@media (min-width: 640px){
+  .sm\:text-2xl{
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+}
+
+@media (min-width: 768px){
+  .md\:block{
+    display: block;
+  }
+
+  .md\:grid-cols-2{
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .md\:justify-between{
+    justify-content: space-between;
+  }
+
+  .md\:text-3xl{
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+  }
+}
+
+@media (min-width: 1024px){
+  .lg\:grid-cols-3{
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
 }

@@ -13,22 +13,22 @@
 <body class="text-gray-300 bg-gray-900 font-bodyfont">
     <div class="main-container px-10 grid grid-cols-3">
         <div class="navigation text-right pt-3">
-            <div class="title text-3xl font-bold p-5 border-b border-gray-600 text-secondary-200">KORSAT 
+            <div class="title sm:text-2xl md:text-3xl font-bold p-5 border-b border-gray-600 text-secondary-200">KORSAT 
                 <span class="text-secondary-100">X</span> PARMAGA</div>
 
     
             <div class="links">
-                <div class="link flex justify-end items-center px-5 py-3 border-r-2 bg-gray-500 bg-opacity-25">
+                <div class="link flex justify-end items-center px-5 py-3 border-r-2 bg-gray-500 bg-opacity-25 hover:bg-gray-500 hover:bg-opacity-25 cursor-pointer transition ease-out duration-200">
                     <div class="text font-semibold text-gray-50">Home</div>
                     <div class="icon ml-2 text-xl"><i class='bx bx-home'></i></div>
                 </div>
     
-                <div class="link flex justify-end items-center px-5 py-3">
+                <div class="link flex justify-end items-center px-5 py-3 hover:bg-gray-500 hover:bg-opacity-25 cursor-pointer transition ease-out duration-200">
                     <div class="text">About</div>
                     <div class="icon ml-2 text-xl"><i class='bx bx-help-circle'></i></div>
                 </div>
     
-                <div class="link flex justify-end items-center px-5 py-3">
+                <div class="link flex justify-end items-center px-5 py-3 hover:bg-gray-500 hover:bg-opacity-25 cursor-pointer transition ease-out duration-200">
                     <div class="text">Contact</div>
                     <div class="icon ml-2 text-xl"><i class='bx bx-envelope'></i></div>
                 </div>
@@ -36,15 +36,15 @@
         </div>
     
         <main class="col-span-2 pt-5 pl-5">
-            <header class="flex justify-between items-start">
-                <div class="title">
+            <header class="flex justify-end md:justify-between items-start">
+                <div class="title hidden md:block">
                     <div class="main-title text-6xl font-bold">Games</div>
                     <div class="sub-title text-3xl font-semibold text-green-500">For Gamers</div>
                 </div>
             
                 <div class="user flex justify-end gap-5">
-                    <div class="login font-semibold text-primary btn">Log in</div>
-                    <div class="signup font-semibold text-primary btn">Sign up</div>
+                    <div class="login font-semibold text-primary btn hover:bg-primary hover:text-white transition ease-out duration-200">Log in</div>
+                    <div class="signup font-semibold text-primary btn hover:bg-primary hover:text-white transition ease-out duration-200">Sign up</div>
                 </div>
             </header>
             
@@ -53,7 +53,7 @@
                     <div class="title text-3xl font-bold text-yellow-500 py-5 border-b-2 border-yellow-500 mb-5">
                         Latest Games
                     </div>
-                    <div class="cards grid grid-cols-3 gap-5">
+                    <div class="cards grid md:grid-cols-2 lg:grid-cols-3 gap-5 md">
                         <div class="card">
                             <div class="image h-full w-full">
                                 <img src="img/assassins-creed-mirage.jpg" class="h-full w-full object-cover">
@@ -100,7 +100,7 @@
             
                 <section class="mt-7">
                     <div class="title text-3xl font-bold text-yellow-500 py-5 border-b-2 border-yellow-500 mb-5">Most Popular</div>
-                    <div class="cards">
+                    <!-- <div class="cards">
                         <div class="card">
                             <div class="image"></div>
                             <div class="title">
@@ -108,11 +108,11 @@
                                 <div class="sub-title"></div>
                             </div>
                         </div>
-                    </div>
+                    </div> -->
                 </section>
             
-                <div class="load-more text-xl font-semibold text-gray-900 bg-secondary-200 flex justify-center">
-                    Load More
+                <div class="load-more text-xl font-semibold text-gray-900 bg-secondary-200 flex justify-center py-2">
+                    <a href="#" class="hover:text-white hover:text-2xl transition ease-out duration-200">Load More</a>
                 </div>
             </div>
         </main>
